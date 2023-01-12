@@ -39,6 +39,7 @@ Note that the **_types.h_** file defines the following types:
 structure whose data is a pointer to a WORD_NODE.
 
 ***
+# Stack and Queue Implementation
 ## `stack.c`
 stack.c implements push and pop functions.
 
@@ -48,7 +49,7 @@ _headptr_ is a pointer to the top node on the stack, and _n_ is the data item to
 ### _`WORD_NODE* pop(LIST_NODE** headptr)`_
 _headptr_ is a pointer to the top node on the stack. **_pop_** returns the data that is on top of the stack. It also removes the top node of the stack and updates _headptr_ to hold the address of the new top. Finally, it frees any memory that is no longer being used.
 
-***
+
 ## `queue.c`
 queue.c implements enqueue and dequeue functions.
 
@@ -58,9 +59,10 @@ _headptr_ and _tailptr_ are pointers to the first and last nodes in the queue, a
 ### _`WORD_NODE* dequeue(LIST_NODE** headptr, LIST_NODE** tailptr)`_
 _headptr_ and _tailptr_ are pointers to the first and last nodes in the queue. **_dequeue_** returns the data that is at the front of the queue. It also removes the first node in the queue and updates _headptr_ and _tailptr_ to hold the addresses of the new first and last nodes in the queue. Finally, it frees any memory that is no longer being used.
 ***
+# project3.c 
+
 **_project3.c_** handles all of the main logic for the program, and user input and output.
 The **_project3.c_** file utilizes **_stack.c_** and **_queue.c_**.
-
 
 ## Global Variables
 * _**WORD_NODE****_ _**_nodelist**_ – an array of pointers to WORD_NODES, where each
