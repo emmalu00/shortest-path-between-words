@@ -1,8 +1,8 @@
 # shortest-path-between-words
 ## About
-This program finds the shortest "path" between two words entered as input by the user. In the path, two words can be connected if they are the same length and they contain exactly the same characters in the same positions except for one. For example, _“cat”_ and _“car”_ can be connected since they only differ by the 3rd letter. On the other hand, _“art”_ and _“arts”_ are not connected since they are not the same length. _“vein”_ and _“vine”_ are not connected even though they contain the same letters, as their letters differ in three different positions.
+This program finds the shortest "path" between two words entered as input by the user. In the path, two words can be connected if they are the same length and they contain exactly the same characters in the same positions except for one. For example, _“cat”_ and _“car”_ can be connected since they only differ by the 3rd letter. On the other hand, _“art”_ and _“arts”_ are not connected since they are not the same length. _“vein”_ and _“vine”_ are not connected even though they contain the same letters, as their letters differ in three different positions. 
 
-### Running the Program
+## Running the Program
 The program compiles through the command line with the following statement: 
 
 `make`
@@ -13,7 +13,9 @@ The program will then run through the command line with the following statement:
 
 `./project3 inputFile`
 
-Here, _inputFile_ is the name of an input file (such as words56.txt).
+Here, _inputFile_ is the name of an input file.
+
+The file **_words56.txt_** is provided as an example test file for running this program, containing over 8000 words, with each word on a separate line. All input files should be formatted exactly as **_words56.txt_**. 
 
 ## Code Specifications
 
