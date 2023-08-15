@@ -1,6 +1,6 @@
 /*
 * Author: Emma Lucas
-* project3.c
+* shortestpath.c
 * This file reads in the text file. The user is prompted to enter 
 * a start word and stop word, and the program finds the shortest 
 * path from start to stop, changing one letter at a time.
@@ -80,10 +80,9 @@ int main(int argc, char* argv[])
         fgets(buffer, 30, stdin);
         buffer[strcspn(buffer, "\n")] = '\0';
         WORD_NODE* stopword = get_word(strtok(buffer, " "));
-        //BOOL testing = bfs(startword, stopword);
         if (startword == NULL || stopword == NULL)
         {
-            printf("Invalid input.\n");
+            printf("\nInvalid input.\n");
             if (startword == NULL)
             {
                 printf("Start word was not found.\n");

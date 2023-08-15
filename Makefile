@@ -1,12 +1,12 @@
 CC=gcc
 CFLAGS=-g -Wall
-EXE=project3
+EXE=shortestpath
 HEADERS=types.h queue.h stack.h
-CODE=queue.c stack.c project3.c
+CODE=queue.c stack.c shortestpath.c
 
 OBJECTS = $(CODE:.c=.o)
 
-project3: $(OBJECTS) $(HEADERS)
+shortestpath: $(OBJECTS) $(HEADERS)
 	$(CC) $(CFLAGS) $(OBJECTS) -o $(EXE)
 
 clean: 
