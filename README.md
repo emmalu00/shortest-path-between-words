@@ -14,9 +14,9 @@ This will produce the executable for **_shortestpath.c_**
 
 The program must then be run through the command line with the following statement:
 
-`./shortestpath <inputFileName.txt>`
+`./shortestpath <filename.txt>`
 
-where **_inputFileName.txt_** is the input text file. If the user does not enter a filename as a command line argument, the program will produce an error message and exit.
+where **_filename.txt_** is the input text file. If the user does not enter a filename as a command line argument, the program will produce an error message and exit.
 
 The file **_words56.txt_** is provided as an example test file for running this program, containing over 8000 words, with each word on a separate line. All input files should be formatted exactly as **_words56.txt_**. 
 
