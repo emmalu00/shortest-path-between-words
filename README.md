@@ -7,23 +7,12 @@ The program compiles through the command line with the following statement:
 
 `make`
 
-This will produce the executable **_project3.c_**
+This will produce the executable for **_shortestpath.c_**
 
 The program will then run through the command line with the following statement:
 
-`./project3 inputFile`
+`./shortestpath <inputFileName.txt>`
 
-Here, _inputFile_ is the name of an input file.
+where **_inputFileName.txt_** is the input text file. If the user does not enter a filename as a command line argument, the program will produce an error message and exit.
 
 The file **_words56.txt_** is provided as an example test file for running this program, containing over 8000 words, with each word on a separate line. All input files should be formatted exactly as **_words56.txt_**. 
-
-## Code Specifications
-
-**_project3.c_** handles all of the main logic for the program, and user input and output.
-The **_project3.c_** file utilizes **_stack.c_** and **_queue.c_**. 
-
-Note that the **_types.h_** file defines the following types:
-* _BOOL_ – represents a boolean type, with true/false values
-* _WORD_NODE_ – used in **_project3.c_** to represent a node in a graph
-* _LIST_NODE_ – used by stack and queue to represent a node in a linked data
-structure whose data is a pointer to a WORD_NODE.
